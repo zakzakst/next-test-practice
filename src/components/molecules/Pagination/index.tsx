@@ -10,6 +10,7 @@ const isCurrent = (
   b: number
 ): AnchorHTMLAttributes<HTMLAnchorElement> => {
   return {
+    // NOTE: 参考のコードだと比較演算子に「==」を利用していたが、現状「===」でも問題なく動くため変更している（aria-currentがhtmlの属性の関係で文字列になるので、その関係で「==」を使っていた？）
     "aria-current": (a === 0 && b === 1) || a === b ? "page" : undefined,
   };
 };
