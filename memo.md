@@ -1,3 +1,3 @@
 ### 今やっているところ
 
-https://github.com/frontend-testing-book/nextjs/tree/main/src/components/molecules/Pagination
+https://github.com/frontend-testing-book/nextjs/blob/main/src/components/molecules/PostFormHeroImage/index.tsx
