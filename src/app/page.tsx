@@ -4,7 +4,8 @@ import Image from "next/image";
 import styles from "./page.module.css";
 
 // const url = "https://localhost:3000/hello";
-const url = "https://example.com/hello";
+// const url = "https://example.com/hello";
+const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 export default function Home() {
   useEffect(() => {

@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const url = "https://example.com/hello";
+// const url = "https://example.com/hello";
+const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 export const metadata: Metadata = {
   title: "Create Next App",
