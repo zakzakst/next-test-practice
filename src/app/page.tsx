@@ -7,13 +7,6 @@ import styles from "./page.module.css";
 const url = "https://example.com/hello";
 
 export default function Home() {
-  // try {
-  //   const res = await fetch(url);
-  //   const json = await res.json();
-  //   console.log(json);
-  // } catch (err) {
-  //   console.error(err);
-  // }
   useEffect(() => {
     const getHello = async () => {
       console.log(url);
