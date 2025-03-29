@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { MSWProvider } from "./msw-provider";
+
+// if (process.env.NEXT_RUNTIME === "nodejs") {
+//   if (typeof window === "undefined") {
+//     console.log("browser");
+//   } else {
+//     console.log("server");
+//   }
+//   const { initMocks } = await import("@/lib/msw");
+//   console.log(initMocks);
+//   initMocks();
+// }
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <MSWProvider>{children}</MSWProvider>
       </body>
     </html>
   );
