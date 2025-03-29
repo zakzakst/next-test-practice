@@ -1,7 +1,8 @@
 import { http, HttpResponse, type RequestHandler } from "msw";
 
 // const url = "https://localhost:3000/hello";
-const url = "https://example.com/hello";
+// const url = "https://example.com/hello";
+const url = "https://jsonplaceholder.typicode.com/todos/1";
 
 const helloHandler = http.get(url, () => {
   return HttpResponse.json({
