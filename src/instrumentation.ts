@@ -7,7 +7,7 @@ export async function register() {
     const { server } = await import("@/lib/msw/setup/server");
     server.listen();
   } else {
-    const { worker } = await import("@/lib/msw/setup/browser");
-    worker.start();
+    // const { worker } = await import("@/lib/msw/setup/browser");
+    // worker.start();
   }
 }
