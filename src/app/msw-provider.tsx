@@ -3,7 +3,7 @@
 import { Suspense, use } from "react";
 
 const mockingEnabledPromise =
-  typeof window !== "undefined"
+  process.env.NODE_ENV === "development" && typeof window !== "undefined"
     ? import("@/lib/msw/setup/browser").then(async ({ worker }) => {
         // モックサーバーを起動
         await worker.start({
